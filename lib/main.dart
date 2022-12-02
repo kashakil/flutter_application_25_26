@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
+void main() => runApp(const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     ));
@@ -23,9 +23,9 @@ class HomePage extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back),
                     ),
-                    Text(
+                    const Text(
                       'Choose Services',
                       style: TextStyle(
                           fontSize: 16.0,
@@ -34,9 +34,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 12.0, vertical: 24.0),
+                const Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 12.0, vertical: 24.0),
                   child: Text(
                     'Select Delivery Type',
                     style: TextStyle(
@@ -55,14 +55,13 @@ class HomePage extends StatelessWidget {
                     child: ListView.builder(
                         itemCount: 4,
                         itemBuilder: (context, index) {
-                          return Card(
+                          return const Card(
                             elevation: 1.5,
                             color: Colors.white,
                             child: ListTile(
                               leading: Icon(Icons.airplanemode_active),
                               title: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 8.0),
+                                padding: EdgeInsets.symmetric(vertical: 8.0),
                                 child: Text('Air Flight'),
                               ),
                               subtitle: Text('reliable & hassle free'),
@@ -72,9 +71,9 @@ class HomePage extends StatelessWidget {
                         }),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 12.0, vertical: 24.0),
+                const Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 12.0, vertical: 24.0),
                   child: Text(
                     'Select Speed Type',
                     style: TextStyle(
@@ -98,16 +97,16 @@ class HomePage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.check_box_outline_blank),
-                              SizedBox(
+                              const Icon(Icons.check_box_outline_blank),
+                              const SizedBox(
                                 width: 12.0,
                               ),
-                              Text('Regular'),
+                              const Text('Regular'),
                             ],
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 12.0,
                       ),
                       Expanded(
@@ -121,11 +120,11 @@ class HomePage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.check_box_outline_blank),
-                              SizedBox(
+                              const Icon(Icons.check_box_outline_blank),
+                              const SizedBox(
                                 width: 12.0,
                               ),
-                              Text('Regular'),
+                              const Text('Regular'),
                             ],
                           ),
                         ),
@@ -145,14 +144,14 @@ class HomePage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Calculate',
                           style: TextStyle(
                             color: Colors.white,
                             letterSpacing: 0.5,
                           ),
                         ),
-                        Icon(
+                        const Icon(
                           Icons.arrow_forward_rounded,
                           color: Colors.white,
                         ),
